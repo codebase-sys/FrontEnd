@@ -1,4 +1,4 @@
-body {
+/* body {
   background: #fff;
   padding: 0px;
   margin: 0px;
@@ -56,3 +56,81 @@ input, button {
   border: 1px solid #5d8ffc;
   cursor: pointer;
 }
+ */
+
+  body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: url(./images/background-sign1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .login-box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    padding: 30px;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 13px;
+  }
+  .login-box h1{
+    margin: 0px 0px 30px;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: turquoise;
+  }
+  .login-box .input-text{
+    position: relative;
+  }
+  .login-box .input-text input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom:30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+  }
+  .login-box .input-text label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .login-box .input-text input:focus ~ label,
+  .login-box .input-text input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #03a9f4 ;
+    font-size: 12px;
+  }
+  .center{
+    padding: 0px 30px;
+  }
+  .center button{
+    padding: 5px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    font-weight: bold;
+  }
+  .center button:hover{
+    background-color: teal;
+    color: white;
+    transition: .5s;
+  }
