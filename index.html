@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
 <head>
   <title> Form </title>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -23,5 +23,45 @@
   </div>
 
 
+</body>
+</html>
+ -->
+<html>
+
+<head>
+  <title> Form </title>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+
+  <!-- External JavaScrit file is embeded with html file -->
+  <script src="index.js"> </script>
+
+  <!-- Google fonts for login page. -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="login-box">
+    <h1> Login </h1>
+    <form>
+      <div class="input-text">
+        <input type="email" id="email" required />
+        <label for="username">User Name or Email</label>
+      </div>
+      <div class="input-text">
+        <input type="password" id="password" required />
+        <label for="userpassword">Password</label>
+      </div>
+      <div class="center">
+        <button onclick="signUp()" id="signUp"> Sign Up</button>
+        <button onclick="signIn()" id="signIn"> Sign In</button>
+        <button onclick="signOut()" id="signOut"> Sign Out</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
